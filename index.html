@@ -2,116 +2,347 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamal Mukherjee | Astrophysicist</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 20px;
-            line-height: 1.7;
-            color: #333;
-            background: #fff;
-        }
+<title>Tamal Mukherjee | Astrophysicist</title>
 
-        header {
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
-        }
+<style>
+* {
+    box-sizing: border-box;
+}
 
-        h1 { color: #17365D; }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #303846;
+    background: #ffffff;
+    line-height: 1.75;
+}
 
-        h2 {
-            color: #17365D;
-            margin-top: 35px;
-        }
+.container {
+    max-width: 1050px;
+    margin: auto;
+    padding: 30px 25px;
+}
 
-        a {
-            color: #286090;
-            text-decoration: none;
-        }
+nav {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
 
-        a:hover { text-decoration: underline; }
+nav a {
+    color: #34445c;
+    text-decoration: none;
+    font-size: 14px;
+}
 
-        nav a { margin-right: 20px; }
+nav a:hover {
+    color: #1765a0;
+}
 
-        footer {
-            margin-top: 50px;
-            border-top: 1px solid #ddd;
-            padding-top: 15px;
-            color: #777;
-        }
-    </style>
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 55px 0 40px;
+}
+
+.profile img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #f0f2f5;
+}
+
+.profile h1 {
+    font-size: 34px;
+    color: #193b61;
+    margin: 0;
+}
+
+.subtitle {
+    color: #64748b;
+    font-size: 17px;
+}
+
+.links a {
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+h2 {
+    color: #193b61;
+    font-size: 23px;
+    margin-top: 38px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+a {
+    color: #2167a3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.position {
+    margin: 15px 0;
+}
+
+.date {
+    color: #788494;
+    font-size: 14px;
+}
+
+.paper {
+    margin: 22px 0;
+}
+
+.paper p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+footer {
+    border-top: 1px solid #e5e7eb;
+    margin-top: 55px;
+    padding: 20px 0;
+    color: #87909d;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+    .profile {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile h1 {
+        font-size: 28px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>Tamal Mukherjee</h1>
-    <p>Astrophysicist | High-Redshift Galaxies | Galaxy Evolution</p>
+<div class="container">
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+<nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#education">Education</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- PROFILE -->
+
+<section class="profile">
+
+    <img src="profile.jpg" alt="Tamal Mukherjee">
+
+    <div>
+        <h1>Tamal Mukherjee</h1>
+
+        <div class="subtitle">
+            Astrophysicist | Galaxy Formation and Evolution
+        </div>
+
+        <p>
+            PhD Researcher, Macquarie University<br>
+            Incoming Assistant Professor (Research),
+            Tohoku University
+        </p>
+
+        <div class="links">
+            <a href="https://scholar.google.com/citations?user=IDvqnPAAAAAJ&hl=en">Google Scholar</a>
+            <a href="https://orcid.org/0009-0004-7639-869X">ORCID</a>
+            <a href="https://github.com/tamal-lya">GitHub</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- ABOUT -->
 
 <section id="about">
-    <h2>About Me</h2>
 
-    <p>
-        Welcome to my personal academic website.
-        I am an astrophysicist interested in understanding
-        galaxy formation and evolution in the early Universe.
-        My research focuses on Lyman-alpha emitters,
-        high-redshift galaxies and the circumgalactic medium.
-    </p>
+<h2>About Me</h2>
+
+<p>
+I am an astrophysicist interested in understanding
+galaxy formation and evolution in the early Universe.
+My research focuses on high-redshift galaxies,
+particularly Lyman-alpha emitters (LAEs), and the role
+of gas kinematics and radiative transfer in shaping
+their observable properties.
+</p>
+
+<p>
+During my PhD at Macquarie University, Australia,
+I investigated the properties of Lyman-alpha emitting
+galaxies using integral-field spectroscopy from
+VLT/MUSE, complemented by observations from facilities
+including JWST, Subaru and HST.
+</p>
+
+<p>
+My research interests include the circumgalactic
+medium, gas inflows and outflows, ionising photon
+escape, and galaxy evolution during the epoch
+of reionisation.
+</p>
+
+<p>
+I will be joining Tohoku University, Japan, as an
+Assistant Professor (Research) in February 2027.
+There, I look forward to pursuing further studies
+of high-redshift galaxies using JWST, Roman and PFS.
+</p>
+
 </section>
+
+<!-- RESEARCH -->
 
 <section id="research">
-    <h2>Research Interests</h2>
 
-    <ul>
-        <li>Lyman-alpha emitters and radiative transfer</li>
-        <li>Galaxy formation and evolution at high redshift</li>
-        <li>Gas kinematics and the circumgalactic medium</li>
-        <li>JWST observations of distant galaxies</li>
-    </ul>
+<h2>Research Interests</h2>
+
+<ul>
+<li>Lyman-alpha emitters and radiative transfer</li>
+<li>Galaxy formation and evolution at high redshift</li>
+<li>Gas kinematics and the circumgalactic medium</li>
+<li>Gas accretion, outflows and ionising photon escape</li>
+<li>Cosmic reionisation and the early Universe</li>
+</ul>
+
 </section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2>Academic Positions & Education</h2>
+
+<div class="position">
+<h3>Assistant Professor (Research) – Incoming</h3>
+Tohoku University, Japan
+<div class="date">February 2027 – Upcoming</div>
+</div>
+
+<div class="position">
+<h3>PhD in Astronomy</h3>
+Macquarie University, Sydney, Australia
+<div class="date">Thesis submitted: October 2026</div>
+</div>
+
+<div class="position">
+<h3>Master of Science in Physics</h3>
+Indian Institute of Technology Madras, India
+</div>
+
+</section>
+
+<!-- PUBLICATIONS -->
 
 <section id="publications">
-    <h2>Publications</h2>
 
-    <p>
-        My research publications can be found on
-        <a href="https://ui.adsabs.harvard.edu/"
-        target="_blank">NASA ADS</a>.
-    </p>
+<h2>Publications</h2>
 
-    <p>
-        More publication details coming soon.
-    </p>
+<p>
+For the complete and updated publication list,
+visit my <a href="https://scholar.google.com/citations?user=IDvqnPAAAAAJ&hl=en">Google Scholar profile</a>.
+</p>
+
+<h3>First-author Publications</h3>
+
+<div class="paper">
+<strong>
+<a href="https://doi.org/10.1017/pasa.2026.10145">
+A Census of Double-Peaked Lyman-α Emitters in MAGPI:
+Classification, Global Characteristics, and Spatially
+Resolved Properties
+</a>
+</strong>
+<p>Mukherjee et al. (2026), Publications of the Astronomical Society of Australia.</p>
+</div>
+
+<div class="paper">
+<strong>
+<a href="https://doi.org/10.1051/0004-6361/202659780">
+BLUEPRINT: Blue-dominant Lyman-α emission as evidence
+of gas inflow in ultra-low-mass galaxies at z = 3
+</a>
+</strong>
+<p>Mukherjee et al. (2026), Astronomy & Astrophysics.</p>
+</div>
+
+<div class="paper">
+<strong>
+<a href="https://doi.org/10.1017/pasa.2024.112">
+The MAGPI Survey: Insights into the Lyα Line Widths
+and the Size of Ionised Bubbles at the Edge of
+Cosmic Reionisation
+</a>
+</strong>
+<p>Mukherjee et al. (2024), Publications of the Astronomical Society of Australia.</p>
+</div>
+
+<h3>Co-author Publications</h3>
+
+<p>
+See my complete co-authored publication list on
+<a href="https://scholar.google.com/citations?user=IDvqnPAAAAAJ&hl=en">
+Google Scholar
+</a>.
+</p>
+
 </section>
 
+<!-- CONTACT -->
+
 <section id="contact">
-    <h2>Contact</h2>
 
-    <p>Email: your-email@example.com</p>
+<h2>Contact</h2>
 
-    <p>
-        <a href="https://orcid.org/">ORCID</a> |
-        <a href="https://scholar.google.com/">Google Scholar</a>
-    </p>
+<p>
+Email: <a href="mailto:tamal.mukherjee@hdr.mq.edu.au">
+tamal.mukherjee@hdr.mq.edu.au</a>
+</p>
+
+<p>
+<a href="https://orcid.org/0009-0004-7639-869X">ORCID</a> |
+<a href="https://scholar.google.com/citations?user=IDvqnPAAAAAJ&hl=en">Google Scholar</a> |
+<a href="https://github.com/tamal-lya">GitHub</a>
+</p>
+
 </section>
 
 <footer>
-    <p>© 2026 Tamal Mukherjee</p>
+© 2026 Tamal Mukherjee. All rights reserved.
 </footer>
+
+</div>
 
 </body>
 </html>
